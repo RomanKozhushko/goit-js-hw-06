@@ -16,8 +16,9 @@ const elements = ingredients.map(option => {// 1/ Створюємо li
   itemName.textContent = option;
   // 4/ Додаємо h2 b li
   itemOfFood.appendChild(itemName);
-  // 5/ Додаємо  li b ul
-  const ingredientsContainer = document.querySelector('ul')
+  // 5/ Шукаємо ul
+  const ingredientsContainer = document.querySelector('#ingredients')
+  //  6/ Додаємо  li b ul
   ingredientsContainer.appendChild(itemOfFood);
   console.log(itemOfFood);
 })
