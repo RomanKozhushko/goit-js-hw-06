@@ -7,9 +7,10 @@ console.log('Number of categories:', numberCategoryEl);
 // // 2. Для кожного элемента li.item у спику ul#categories, 
 // знайде і виведе в консоль текст заголовку елемента(тегу < h2 >) 
 // і кількість елементів в категорії(усіх < li >, вкладених в нього).
-const headsOfCategories = document.querySelectorAll('ul li ul:nth-child(1)');
-const headOfCategory = headsOfCategories.textContent;
-console.log('Elements:', headOfCategory);
+
+
+const numberInCategory = numberInCategories.length;
+console.log('Elements:', numberInCategory);
 
 
 
