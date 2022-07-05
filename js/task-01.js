@@ -7,10 +7,13 @@ console.log('Number of categories:', numberCategoryEl);
 // // 2. Для кожного элемента li.item у спику ul#categories, 
 // знайде і виведе в консоль текст заголовку елемента(тегу < h2 >) 
 // і кількість елементів в категорії(усіх < li >, вкладених в нього).
+categoryEl.forEach(function (El, index) {
+    
+  console.log(`Індекс ${index + 1}, значення ${El}`);
+});
 
-
-const numberInCategory = numberInCategories.length;
-console.log('Elements:', numberInCategory);
+// const numberInCategory = numberInCategories.length;
+// console.log('Elements:', numberInCategory);
 
 
 
