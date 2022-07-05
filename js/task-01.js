@@ -10,3 +10,6 @@ console.log('Number of categories:', numberCategoryEl);
 const headsOfCategories = document.querySelectorAll('h2');
 const headOfCategory = headsOfCategories.textContent;
 console.log('Elements:', headOfCategory);
+
+
+
