@@ -1,6 +1,6 @@
 const refs = {
     input: document.querySelector('#name-input'),
-    changeNameSpan: document.querySelector('#name-output > span'),
+    changeNameSpan: document.querySelector('#name-output'),
     button: document.querySelector('#name-output'),
 };
 
