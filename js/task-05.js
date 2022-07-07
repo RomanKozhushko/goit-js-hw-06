@@ -1,6 +1,9 @@
-const input = document.querySelector('#name-input');
-const span = document.querySelector('#name-output > span')
-const span = document.querySelector('#name-output')
+const refs = {
+input: document.querySelector('#name-input'),
+span: document.querySelector('#name-output > span'),
+button: document.querySelector('#name-output'),
+}
+
 
 
 
