@@ -1,14 +1,12 @@
-const refs = {
-    input: document.querySelector('#name-input'),
-    changeNameSpan: document.querySelector('#name-output'),
-    button: document.querySelector('#name-output'),
-};
+const inputName = document.querySelector('#name-input');
+const changeNameSpan = document.querySelector('#name-output');
+const button = document.querySelector('#name-output');
 
-refs.input.addEventListener('input', onInputChange);
-
-function onInputChange (event) {
-    refs.changeNameSpan.textContent = event.currentTarget.value;
-}
-
-
+inputName.addEventListener('input', () => {
+    if (inputName.value !== '') {
+        changeNameSpan.textContent = inputName.value.trim();
+    } if (inputName.value === '') {
+        changeNameSpan.textContent = 'Anonymous';
+    }
+});
 
