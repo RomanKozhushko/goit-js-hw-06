@@ -1,12 +1,14 @@
 const refs = {
-input: document.querySelector('#name-input'),
-span: document.querySelector('#name-output > span'),
-button: document.querySelector('#name-output'),
+    input: document.querySelector('#name-input'),
+    changeNameSpan: document.querySelector('#name-output > span'),
+    button: document.querySelector('#name-output'),
+};
+
+refs.input.addEventListener('input', onInputChange);
+
+function onInputChange (event) {
+    refs.changeNameSpan.textContent = event.currentTarget.value;
 }
-
-
-
-
 
 
 
