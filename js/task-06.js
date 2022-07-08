@@ -6,7 +6,7 @@ const inputLength = input.getAttribute("data-length");
 
 
 input.oninput = function() {
-    if(input.value.length > inputLength) {
+    if(input.value.length >= inputLength) {
         input.classList.remove("invalid");
         input.classList.add("valid");
     }
