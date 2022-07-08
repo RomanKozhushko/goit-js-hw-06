@@ -5,7 +5,8 @@ let input = document.querySelector("#validation-input");
 const inputLength = input.getAttribute("data-length");
 
 
-input.oninput = function() {
+input.oninput = function () {
+
     if(input.value.length >= inputLength) {
         input.classList.remove("invalid");
         input.classList.add("valid");
