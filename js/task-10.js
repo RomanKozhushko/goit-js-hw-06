@@ -20,6 +20,12 @@ const createDiv = (event) => {
     for (let i = 0; i < counter; ++i) {
       let div = document.createElement("div");
       div.classList.add('cube');
+      div.style.width = 30 + i * 10 + "px";
+	    div.style.height = 30 + i * 10 + "px";
+	    div.style.background = getRandomHexColor();
+	// li.style.border = '2px'
+	// li.style.borderColor = '#000'
+	// li.style.borderStyle = 'solid'
       const divBoxes = document.querySelector('#boxes')
       divBoxes.appendChild(div);
   }
@@ -27,29 +33,13 @@ const createDiv = (event) => {
 button.add.addEventListener("click", createDiv);
 
 const deleteDiv = (event) => {
-  
+    const numberDiv = document.querySelectorAll('.cube');
+    for (let i = 0; i < numberDiv.length; ++i) {
     const divInBoxes = document.querySelector('.cube')
     divInBoxes.remove();
   }
-
+}
 button.sub.addEventListener("click", deleteDiv);
 
 
-// 
-
-
-// const elements = ingredients.map(option => {// 1/ Створюємо li
-//   const itemOfFood = document.createElement('li');
-//   // 2/ Додаємо клас у li
-//   itemOfFood.classList.add('item');
-//   // 3/ Створюємо h2
-//   const itemName = document.createElement('h2');
-//   itemName.textContent = option;
-//   // 4/ Додаємо h2 b li
-//   itemOfFood.appendChild(itemName);
-//   // 5/ Шукаємо ul
-//   const ingredientsContainer = document.querySelector('#ingredients')
-//   //  6/ Додаємо  li b ul
-//   ingredientsContainer.appendChild(itemOfFood);
-//   console.log(itemOfFood);
-// })
+   
