@@ -12,7 +12,6 @@ let counter;
 const handleClick = (event) => {
   counter = parseInt(event.currentTarget.value);
   console.log(counter);
-
   }
 button.inputName.addEventListener("change", handleClick);
 
