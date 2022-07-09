@@ -22,10 +22,8 @@ const createDiv = (event) => {
       div.classList.add('cube');
       div.style.width = 30 + i * 10 + "px";
 	    div.style.height = 30 + i * 10 + "px";
-	    div.style.background = getRandomHexColor();
-	// li.style.border = '2px'
-	// li.style.borderColor = '#000'
-	// li.style.borderStyle = 'solid'
+      div.style.background = getRandomHexColor();
+      
       const divBoxes = document.querySelector('#boxes')
       divBoxes.appendChild(div);
   }
