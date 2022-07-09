@@ -3,8 +3,8 @@ function getRandomHexColor() {
 }
 
 const button = {
-    sub: document.querySelector("[data-create]"),
-    add: document.querySelector("[data-destroy]"),
+    add: document.querySelector("[data-create]"),
+    sub: document.querySelector("[data-destroy]"),
     inputName: document.querySelector('input'),
 }
 
@@ -16,14 +16,23 @@ const handleClick = (event) => {
   }
 button.inputName.addEventListener("change", handleClick);
 
-
 const createDiv = (event) => {
     for (let i = 0; i < counter; ++i) {
-    let div = document.createElement("div");   
-    document.body.appendChild(div);  
+      let div = document.createElement("div");
+      div.classList.add('cube');
+      const divBoxes = document.querySelector('#boxes')
+      divBoxes.appendChild(div);
   }
+}
+button.add.addEventListener("click", createDiv);
+
+const deleteDiv = (event) => {
+  
+    const divInBoxes = document.querySelector('.cube')
+    divInBoxes.remove();
   }
-button.sub.addEventListener("click", createDiv);
+
+button.sub.addEventListener("click", deleteDiv);
 
 
 // 
