@@ -20,7 +20,7 @@ const elements = ingredients.map(option => {
   // 5/ Шукаємо ul
   const ingredientsContainer = document.querySelector('#ingredients')
   //  6/ Додаємо  li b ul
-  ingredientsContainer.appendChild(itemOfFood);
+  ingredientsContainer.append(itemOfFood);
   console.log(itemOfFood);
 })
 
