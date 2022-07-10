@@ -10,7 +10,7 @@ const button = {
 
 let counter;
 const handleClick = (event) => {
-  counter = parseInt(event.currentTarget.value) + document.querySelectorAll('.cube');
+  counter = parseInt(event.currentTarget.value);
   console.log(counter);
   }
 button.inputName.addEventListener("change", handleClick);
@@ -21,9 +21,7 @@ const createDiv = (event) => {
       div.classList.add('cube');
       div.style.width = 30 + i * 10 + "px";
       div.style.height = 30 + i * 10 + "px";
-      counter += document.querySelectorAll('.cube');
       div.style.background = getRandomHexColor();
-      
       const divBoxes = document.querySelector('#boxes')
       divBoxes.appendChild(div);
   }
