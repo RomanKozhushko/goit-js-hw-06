@@ -7,7 +7,8 @@ const ingredients = [
   'Condiments',
 ];
 
-const elements = ingredients.map(option => {// 1/ Створюємо li
+const elements = ingredients.map(option => {
+  // 1/ Створюємо li
   const itemOfFood = document.createElement('li');
   // 2/ Додаємо клас у li
   itemOfFood.classList.add('item');
@@ -26,13 +27,6 @@ const elements = ingredients.map(option => {// 1/ Створюємо li
   
   
 
-// const option = ingredients[0];
 
 
 
-
-  
-
-
-
-//  ingredients.forEach (ingredient, index){}
