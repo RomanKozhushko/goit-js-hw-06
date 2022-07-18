@@ -17,6 +17,3 @@ inputCangeColor.addEventListener('click', () => {
 
 
 let color = document.querySelector(".color");
-
-buttonToColorize.addEventListener("click", getRandomHexColor);
-
