@@ -11,3 +11,21 @@ inputCangeColor.addEventListener('click', () => {
   toBody.style.background = getRandomHexColor();
   changeNameSpan.textContent = getRandomHexColor();
 });
+
+
+
+
+
+let color = document.querySelector(".color");
+
+buttonToColorize.addEventListener("click", getRandomHexColor);
+
+function getRandomHexColor(event) {
+  return #${Math.floor(Math.random() * 16777215).toString(16)};
+  body.style.backgroundColor = getRandomHexColor();
+  color.textContent = ${newColor};
+}
+
+Boris Lemon, [17.07.2022 21:30]
+body.style.backgroundColor = getRandomHexColor();
+  color.textContent = ${newColor};
