@@ -26,6 +26,4 @@ function getRandomHexColor(event) {
   color.textContent = ${newColor};
 }
 
-Boris Lemon, [17.07.2022 21:30]
-body.style.backgroundColor = getRandomHexColor();
-  color.
+Bor
