@@ -15,5 +15,4 @@ inputCangeColor.addEventListener('click', () => {
 
 
 
-
-let color = document.querySelector(".color");
+let color =
