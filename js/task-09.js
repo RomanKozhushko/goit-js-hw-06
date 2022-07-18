@@ -14,5 +14,3 @@ inputCangeColor.addEventListener('click', () => {
 
 
 
-
-let color =
