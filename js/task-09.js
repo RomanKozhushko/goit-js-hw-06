@@ -20,5 +20,3 @@ let color = document.querySelector(".color");
 
 buttonToColorize.addEventListener("click", getRandomHexColor);
 
-function getRandomHexColor(event) {
-  
