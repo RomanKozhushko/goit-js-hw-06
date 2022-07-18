@@ -21,9 +21,4 @@ let color = document.querySelector(".color");
 buttonToColorize.addEventListener("click", getRandomHexColor);
 
 function getRandomHexColor(event) {
-  return #${Math.floor(Math.random() * 16777215).toString(16)};
-  body.style.backgroundColor = getRandomHexColor();
-  color.textContent = ${newColor};
-}
-
-Bor
+  
