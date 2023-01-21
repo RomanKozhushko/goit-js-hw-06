@@ -1,3 +1,4 @@
+// Масив картинок
 const images = [
   {
     url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -16,7 +17,7 @@ const images = [
 const galleryOfImg = ({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`;
 // Створюємо акумулятор
 const galleryMarkup = images.reduce((acc, img) => acc + galleryOfImg(img), "");
-//Шукаємо  class = gallery
+//Достукуємось до class = "gallery"
 const galleryList = document.querySelector(".gallery");
 //Додаємо шаблоні рядки
 galleryList.insertAdjacentHTML("afterbegin", galleryMarkup);
