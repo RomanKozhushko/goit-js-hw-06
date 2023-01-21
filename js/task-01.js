@@ -14,8 +14,6 @@ console.log('Number of categories:', numberCategoryEl);
     console.log(`Elements: ${numberOfElements.length}`);
 });
 
-// const numberInCategory = numberInCategories.length;
-// console.log('Elements:', numberInCategory);
 
 
 
