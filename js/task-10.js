@@ -9,18 +9,25 @@ const button = {
 }
 
 let counter;
+
+// Функція handleClick обробляє подію кліку на елемент. 
+// Вона зчитує значення атрибуту "value" елементу, на якому був викликаний клік, 
+// і перетворює це значення в число типу Int за допомогою parseInt(). 
+// Зчитане значення записується у змінну counter та виводиться в консоль
+// за допомогою console.log(counter).
 const handleClick = (event) => {
   counter = parseInt(event.currentTarget.value);
   console.log(counter);
-  }
+}
+  
 button.inputName.addEventListener("change", handleClick);
 
 const createDiv = (event) => {
     for (let i = 0; i < counter; ++i) {
       let div = document.createElement("div");
       div.classList.add('cube');
-      div.style.width = 30 + i * 10 + "px";
-      div.style.height = 30 + i * 10 + "px";
+      div.style.width = 30 + i * 20 + "px";
+      div.style.height = 30 + i * 20 + "px";
       div.style.background = getRandomHexColor();
       const divBoxes = document.querySelector('#boxes')
       divBoxes.appendChild(div);
