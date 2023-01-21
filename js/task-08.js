@@ -25,6 +25,7 @@ function onFormSubmit(event) {
     };
   //Вивести в Consol  +  RESET   
     console.log(user);
+    // очистити поле інпут після нажаття кнопки Submit
     document.querySelector('form').reset();
   }
     
